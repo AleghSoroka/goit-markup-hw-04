@@ -532,11 +532,11 @@ img {
   display: flex;
 }
 
-.customers {
+.customers-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: 0 156px;
+  /* margin: 0 156px; */
   gap: 24px;
 }
 
