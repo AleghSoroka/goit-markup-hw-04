@@ -660,6 +660,7 @@ img {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--ocean);
+  border: none;
 }
 
 .modal-btn-icon {
