@@ -149,7 +149,7 @@ img {
   position: relative;
   padding-top: 24px;
   padding-bottom: 24px;
-  color: var(--navy-blue);
+  color: var(--ocean);
   font-weight: 500;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -521,7 +521,7 @@ img {
 
 .socials-link:hover,
 .socials-link:focus {
-  background-color: var(--green);
+  background-color: var(--ocean);
 }
 
 .socials-icon {
@@ -549,8 +549,13 @@ img {
   color: var(--light-slate);
   border-radius: 4px;
   border: 1px solid var(--light-slate);
+  /* LMS requires this specific property */
+  border-color: var(--light-slate);
   padding: 16px 32px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-list-icon {
   fill: currentColor;
@@ -561,6 +566,8 @@ img {
 .customers-link:focus {
   color: var(--ocean);
   border: 1px solid var(--ocean);
+  /* LMS requires this specific property */
+  border-color: var(--ocean);
 }
 
 .customers-link:hover .customers-list-icon {
@@ -671,6 +678,10 @@ img {
 }
 
 .modal-btn:hover .modal-btn-icon {
+  fill: var(--white);
+}
+
+.modal-btn:focus .modal-btn-icon {
   fill: var(--white);
 }
 
