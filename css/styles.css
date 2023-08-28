@@ -110,6 +110,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .header-nav {
@@ -122,6 +123,7 @@ img {
 }
 
 .nav-list {
+  color: var(--ocean);
   display: flex;
   gap: 40px;
 }
@@ -155,7 +157,7 @@ img {
 .site-navigation::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   display: block;
   width: 100%;
@@ -288,7 +290,7 @@ img {
   margin-bottom: 16px;
 }
 
-.order-button {
+.order-btn {
   color: var(--white);
   background-color: var(--iris);
   font-family: Roboto, sans-serif;
@@ -305,10 +307,11 @@ img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.order-button:hover,
-.order-button:focus {
+.order-btn:hover,
+.order-btn:focus {
   cursor: pointer;
   color: var(--white);
   background-color: var(--ocean);
@@ -482,13 +485,15 @@ img {
 
 .staff-socials-icon-box {
   display: flex;
-  margin-left: 16px;
-  margin-right: 16px;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
 }
 
 .socials-icon-bg {
+  display: flex;
+}
+
+.socials-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -499,8 +504,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials-icon-bg:hover,
-.socials-icon-bg:focus {
+.socials-link:hover,
+.socials-link:focus {
   background-color: var(--green);
 }
 
@@ -512,10 +517,6 @@ img {
   display: flex;
 }
 
-.socials-link {
-  display: inline-block;
-}
-
 .customers {
   display: flex;
   justify-content: space-between;
@@ -524,7 +525,7 @@ img {
   gap: 24px;
 }
 
-.customers-outside-box {
+.customers-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -540,12 +541,12 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-outside-box:hover,
-.customers-outside-box:focus {
+.customers-link:hover,
+.customers-link:focus {
   border: 1px solid var(--ocean);
 }
 
-.customers-outside-box:hover .customers-list-icon {
+.customers-link:hover .customers-list-icon {
   fill: var(--ocean);
 }
 
