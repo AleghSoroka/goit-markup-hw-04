@@ -639,13 +639,13 @@ img {
   border: 1px solid #0000001a;
 }
 
-.backdrop.is-hiden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
-.backdrop.is-hiden .modal {
+.backdrop.is-hidden .modal {
   transform: translateX(-50%) translateY(-70%);
   opacity: 0;
 }
